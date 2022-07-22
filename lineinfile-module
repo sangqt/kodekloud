@@ -1,0 +1,8 @@
+- name: 
+  hosts: stapp01, stapp02, stapp03
+  become: yes
+  tasks:
+    - name: install httpd 
+    - name: create file with content(copy module)
+    - name: use lineinfile to add content(state: present, insertbefore: BOF - `begin of file`)
+    - name: make sure httpd is up and running
