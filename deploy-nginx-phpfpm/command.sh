@@ -1,0 +1,1 @@
+kubectl cp /opt/index.php nginx-phpfpm:/var/www/html -c nginx-container
