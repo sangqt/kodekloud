@@ -1,0 +1,9 @@
+
+    1  cd /usr/src/kodekloudrepos/official
+    2  git remote add dev_official /opt/xfusioncorp_official.git
+    3  cp /tmp/index.html .
+    4  git init 
+    5  git add index.html
+    6  git commit -m "add index.html"
+    7  git push -u dev_official master
+    8  history
