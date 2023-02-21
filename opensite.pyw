@@ -9,7 +9,9 @@ delta_t=y-x
 secs=delta_t.total_seconds()
 
 def openteamspirit(url):
-    webbrowser.open(url)
+    weekno = datetime.today().weekday()
+    if weekno < 5:
+        webbrowser.open(url)
     tod = datetime.today()
     nextDay = tod.replace(day=tod.day, hour=9, minute=27, second=0, microsecond=0) + timedelta(days=1)
     delta_t1=nextDay-tod
